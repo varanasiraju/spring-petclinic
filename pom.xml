@@ -274,6 +274,23 @@
           </dependency>
         </dependencies>
       </plugin>
+      <plugin>
+			   <groupId>org.scoverage</groupId>
+			   <artifactId>scoverage-maven-plugin</artifactId>
+			   <version>1.3.0</version>
+			   <configuration>
+					<minimumCoverage>80</minimumCoverage>
+					<failOnMinimumCoverage>true</failOnMinimumCoverage>
+			   </configuration>
+			<executions>
+         <execution>
+         <goals>
+           <goal>check</goal>
+              </goals>
+               <phase>test</phase>
+              </execution>
+            </executions>
+         </plugin>  
     </plugins>
   </build>
 
